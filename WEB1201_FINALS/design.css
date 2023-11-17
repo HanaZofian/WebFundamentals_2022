@@ -1,0 +1,258 @@
+*{
+    /* border:0; */
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color:peru;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h1,h2,h3{
+    margin:8px;
+  }
+
+  p{
+    margin:8px;
+  }
+
+  button{
+
+    background-color: olive;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    border-radius:20px;
+    cursor:pointer;
+    border:0px;
+    margin:10px;
+
+    }
+
+    a:visited{
+        color:white;
+    }
+
+    button:hover{
+        background-color:darkgreen;
+    }
+
+header{
+    background-color: #AC4425;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /* position: fixed; */
+    width: 100%;
+}
+
+.header_plant_text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+.header_plant_icon{
+    background-color: navy;
+    border-radius: 30px;
+}
+
+.header_hyperlinks{
+    display: flex;
+    height: inherit;
+    width: auto;
+}
+
+.header_join_link{
+    background-color: orange;
+    height: inherit;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_contact_link{
+    background-color: green;
+    height: inherit;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+#main_index{
+    background-color: beige;
+    /* height: 100vh;  */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-wrap:wrap;
+
+
+
+}
+
+
+
+  
+
+
+
+
+#first_section{
+    background-image: url(icons/img_first_div.jpg); 
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+
+
+/* .first_div{
+background-image: url(icons/first_div_image.jpg);   
+width:fit-content;
+} */
+
+
+
+
+form{
+    display: flex;
+    height: 78vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+#inner_form{
+    display: flex;
+    border: 3px;
+    border-color: black;
+    border-radius:15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-style: solid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 600px;
+    height: 100%;
+    background-color: white;
+    padding: 20px 15px;
+}
+
+
+#radio_list{
+    margin: 10px 10px;
+    display:inline-block;
+  }
+
+  input{
+    padding:5px;
+  }
+
+#signup_innerform{
+
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .contact-style input {
+    padding: 5px;
+    border: 4px solid darkblue;
+    height: 25px;
+    width: 295px;
+    border-radius:50px;
+    padding:10px;
+  }
+
+.contact-style textarea {
+    padding: 5px;
+    border: 4px solid darkblue;
+    height: 50px;
+    width: 300px;
+    border-radius:50px;
+    padding:17px;
+}
+
+#error_message{
+    margin-bottom:20px;
+    padding:0px;
+    background: #dc4a46;
+    text-align:center;
+    font-size:14px;
+    transition: all 0.5s ease; 
+
+
+}
+
+
+.login_pop_up{
+    display:none;
+
+  }
+
+#inner_form_log_in{
+    display: flex;
+    border: 3px;
+    /* border-color: black; */
+    /* border-radius:15px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    /* border-style: solid; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    /* background-color: white; */
+    /* padding: 28px 15px; */
+    
+}
+
+
+#form_login{
+    height: 100%;
+    /* flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    padding: 10px;
+    background-color:#B85229;
+    color:white;
+}
+
+#error_message_signin{
+    margin-bottom:20px;
+    padding:0px;
+    background: #dc4a46;
+    text-align:center;
+    font-size:14px;
+    transition: all 0.5s ease; 
+
+
+}
+
+.registered{
+
+    margin-bottom:20px;
+    padding:0px;
+    background: greenyellow;
+    text-align:center;
+    font-size:14px;
+    transition: all 0.5s ease; 
+
+}

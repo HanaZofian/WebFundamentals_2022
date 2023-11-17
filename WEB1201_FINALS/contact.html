@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<head>
+<title>Contact us</title>
+
+<link rel="icon" href="icons/send.png">
+<link rel="stylesheet" href="design.css"> 
+<script src="page.js"></script>
+<style>
+    #signup_innerform{
+
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    label{
+        text-align: left;
+    }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<header>      
+
+    <div class="header_plant_text"> 
+
+        <div class="header_plant_icon"> 
+            <img src="icons/plant.png" style="height: 30px; width: auto; padding: 5px;">
+        </div>
+    
+        <h2 style="color:white;">Zero Waste Today</h2>  
+
+    </div>
+
+  
+
+   <div class="header_hyperlinks"> 
+
+        <div style="color:white; display:flex; align-items:center; justify-content:center; width:100px;"> 
+            <a href="signup.html" target="_blank" style="color: white; text-decoration: none;"> Log in </a>
+        </div>
+
+        <div class= "header_join_link">
+            <a href="signup.html" target="_blank" style="color: white; text-decoration: none;"> Join us </a> 
+        </div>
+        
+        <div class="header_contact_link" >
+            <a href="index.html" target="_blank" style="color: white; text-decoration: none;"> Home Page </a> 
+        </div>
+
+   </div>
+
+
+</header>
+
+<div id="main_index" style="flex-direction:row">
+
+    <div style="
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  ">
+
+  <section style="display:flex; flex-direction:row;background-color:#317773; width:100%; height:100%;">
+
+    <div style="flex:1;display: flex;justify-content: center;align-items: center;padding: 20px;">
+        <h2 style="text-align:left; font-size:50px; color:white">Stay <br>updated</h2>
+    </div>
+
+
+    <div style="display:flex; flex-direction:column;justify-content:space-around; align-items:center; background-color:#E2D1F9; flex:1">
+    <a href="https://www.instagram.com/explore/tags/zerowaste/" target="_blank" style="text-decoration:none"> <img src="icons/instagram (1).png" style="height:60px; width:auto;"></a>
+    <a href="https://www.facebook.com/mnmzerowaste" target="_blank" style="text-decoration:none"> <img src="icons/facebook (1).png" style="height:60px; width:auto;"></a>
+    <a href="https://www.youtube.com/c/ZeroWasteMalaysia" target="_blank" style="text-decoration:none"> <img src="icons/youtube (2).png" style="height:60px; width:auto;"></a>
+
+    </div>
+
+    
+</section>
+    </div>
+
+ 
+
+
+    
+    <section style="background-color: #FCE77D;  height: 100%; display: flex; flex:2;
+    flex-direction: column;"  class="contact-style" >
+        <h2>Drop us a message</h2>
+        <p>Any enquiries are welcome</p>
+
+                     
+        <div id="error_message"></div>
+        <form id="form" onsubmit="return validation()"  >
+            <div id="inner_form">
+                                  
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                                  
+                <label>Email:</label>
+                <input type="email"  id="mail" required>
+                                            
+                <label>Message:</label>
+                <textarea id="message"></textarea>
+                                        
+                <button type="submit">Send</button>
+            </div>
+                    
+         </form> 
+
+    
+    </section>
+
+
+
+    <footer style="font-size:9px; width:100%"><p> <i>&copy; Copyright 2022 Zero Waste. All rights reserved.</i></p></footer>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

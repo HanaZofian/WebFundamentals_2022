@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+
+<head>
+<title>Join us</title>
+
+<link rel="icon" href="icons/handshake.png">
+<link rel="stylesheet" href="design.css"> 
+<script src="page.js"></script>
+
+
+<style>
+    img {
+        object-fit: cover;
+        width: 100%;
+      }
+
+
+
+
+
+
+        
+
+</style>
+</head>
+
+<body>
+
+    <header>      <!--parent 1-->
+
+        <div class="header_plant_text">  <!--parent 1.1-->
+    
+            <div class="header_plant_icon"> <!--child 1.1.1-->
+                <img src="icons/plant.png" style="height: 30px; width: auto; padding: 5px;">
+            </div>
+        
+            <h2 style="color:white;">Zero Waste Today</h2>  <!--child 1.1.2-->
+    
+        </div>
+    
+      
+    
+       <div class="header_hyperlinks"> <!--parent 1.2-->
+    
+            <div style="color:white; display:flex; align-items:center; justify-content:center; width:100px;"> <!--child 1.2.1-->
+                <a href="signup.html" target="_blank" style="color: white; text-decoration: none;"> Log in </a>
+            </div>
+    
+            <div class= "header_join_link">
+                <a href="index.html" target="_blank" style="color: white; text-decoration: none;"> Home </a> <!--child 1.2.2-->
+            </div>
+            
+            <div class="header_contact_link" >
+                <a href="contact.html" target="_blank" style="color: white; text-decoration: none;"> Contact us </a> <!--child 1.2.3-->
+            </div>
+    
+       </div>
+    
+    
+    </header>
+
+<div id="main_index" style="flex-direction:row">
+
+    <section style="background-color:#AA96DA; height:100%;flex:1; display:flex; flex-direction:column; overflow:scroll">
+
+    <div style="flex:1; padding:20px;">
+        <h2>Join us today.</h2>
+
+        <p>By joining Zero Waste today, you will get to:</p>
+
+
+            <ul style="list-style-type:square; padding:30px;">
+                <li>reduce climate impact</li>
+                <li>join local communities in reducing waste</li>
+                <li>promotes social equity and supports local business</li>
+            </ul>
+    </div>
+
+
+    <div style="background-color:#C5FAD5; flex:1;padding:20px;">
+        <h2>Own an account?</h2>
+        <p>Log in to see updates</p>
+
+        <button class="open-button" onclick="openForm()">Log in</button>
+
+        <div style="flex:1; height:fit-content; width:100%; ">
+        <div id="error_message"></div>
+
+        <form id="form_login" class="login_pop_up"  onsubmit="return validation_login()">
+
+            <div id="inner_form_log_in">
+                                  
+
+                <div style="display:flex; flex-direction:column; align-items:center; ">
+                <label>Email:</label>
+                <input type="email"  id="mail" required>
+                                            
+                <label >password:</label>
+                <input id="password" type="password">
+            </div>
+
+                <div style="display:flex; flex-direction:column; align-items:center">
+                    <button type="submit">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </div>
+                                        
+                
+            </div>
+    
+                    
+         </form>
+        </div>
+
+
+
+
+
+    </div>
+    
+    <div style="flex:1;" >
+
+        <img src="icons/together_green.jpg" style="height: 100%; width: 100%; ">
+    </div>
+
+    </section>
+
+
+
+    <section style=" height:100%;flex:2;">
+
+        <h1>Sign up with us.</h1>
+        <p>You can make the change today.</p>
+
+        <div id="error_message_signin" class="registered"></div>
+
+    <form style="height:75%;" onsubmit="return validation_signin()">
+ 
+
+<div id="inner_form">
+
+         <div id="signup_innerform">
+         <label for="name">Name:</label>
+        <input type="text" id="name"placeholder="enter name" required >
+        </div>
+
+        <div id="signup_innerform">
+        <label for="mail">E-mail:</label>
+         <input type="email" id="mail"  placeholder="enter e-mail" required>
+        </div>
+
+         <div id="signup_innerform">
+        <label for="phone">Phone number:</label>
+
+        <input type="tel" style="width:30px;" id="number" placeholder="60"   minlength="2" maxlength="3"required>
+
+        <input type="tel" style="width:135px;"id="number1"  placeholder="0123456789"  minlength="7" maxlength="15"required>
+
+         </div>
+
+         <div id="signup_innerform">
+            <label for="state">State:</label>
+            <select id="state" name="local_states" style="width:166px" required>
+            <option value="" disabled selected hidden >Select state</option>
+              <option value="Selangor">Selangor</option>
+              <option value="Sarawak">Sarawak</option>
+              <option value="Sabah">Sabah</option>
+              <option value="Perlis">Perlis</option>
+              <option value="Malacca">Malacca</option>
+              <option value="Kedah">Kedah</option>
+              <option value="Johor">Johor</option>
+              <option value="Penang">Penang</option>
+            </select>
+
+         </div>
+
+        <div id="signup_innerform">
+            <label for="zipcode">Zipcode:</label>
+             <input type="tel" id="zipcode" minlength="5" maxlength="5" required>
+        </div>
+
+    
+
+        <div>
+            <p>How frequent do you hear zerowaste in social media? </p>
+<!-- 
+            <div style="display:flex; flex-direction:column; justify-content:space-evenly; height:50px;"> -->
+
+        <div id="radio_list">
+          <input type="radio" id="very_frequent" name="frequency" value="very_frequent" required>
+          <label for="very_frequent">Often</label>
+        </div>
+
+        <div id="radio_list">
+          <input type="radio" id="often" name="frequency" value="often" required>
+          <label for="often">Sometimes</label><br>
+        </div>
+
+        <div id="radio_list">
+          <input type="radio" id="rarely" name="frequency" value="rarely" required >
+          <label for="rarely">Rarely</label>
+        </div>
+
+            <!-- </div> -->
+        </div>
+
+         <div style="align-self:flex-end">
+            <label for="button"></label>
+            <button type="submit" id="button">send</button>
+         </div>
+
+ 
+
+
+
+
+</div>
+       
+
+    </form>
+
+    </section>
+
+
+<footer style="font-size:9px; width:100%"><p> <i>&copy; Copyright 2022 Zero Waste. All rights reserved.</i></p></footer>
+
+</div>
+
+
+
+</body>
+
+</html>
